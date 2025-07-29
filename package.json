@@ -1,0 +1,51 @@
+{
+  "name": "web-automation-android-suite",
+  "version": "1.0.0",
+  "description": "Advanced web automation and Android testing suite powered by MCP servers",
+  "main": "index.js",
+  "scripts": {
+    "setup": "powershell -ExecutionPolicy Bypass -File setup-mcp.ps1",
+    "test": "powershell -ExecutionPolicy Bypass -File test-mcp.ps1",
+    "quick-test": "powershell -ExecutionPolicy Bypass -File quick-test.ps1",
+    "setup-cursor": "powershell -ExecutionPolicy Bypass -File setup-cursor-mcp.ps1",
+    "dev": "node examples/demo-server.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "mcp",
+    "automation",
+    "browserbase",
+    "android",
+    "testing",
+    "web-scraping",
+    "ai-automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@browserbasehq/mcp": "latest",
+    "@google/adk-mcp-server": "latest",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/web-automation-android-suite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/web-automation-android-suite/issues"
+  },
+  "homepage": "https://github.com/yourusername/web-automation-android-suite#readme"
+}
